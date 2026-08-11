@@ -1,105 +1,49 @@
 <!DOCTYPE html>
 <html lang="ms">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Oppa Strawberry Motor Sewa | Cameron Highlands</title>
 
-    <link rel="stylesheet" href="style.css">
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #fff;
-            color: #222;
-        }
-
-        header {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
-
-        header p {
-            margin: 8px 0 0;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: #f5f5f5;
-        }
-
-        .hero h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 14px 25px;
-            background: #e63946;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        .section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .section h2 {
-            margin-bottom: 25px;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            max-width: 700px;
-            margin: auto;
-        }
-
-        .feature {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background: white;
-        }
-
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
+
         <h1>🍓 Oppa Strawberry</h1>
+
         <p>Motor Sewa Cameron Highlands</p>
+
     </header>
 
-    <section class="hero">
 
-        <h2>🛵 Jangan Biar Jam Rosakkan Percutian Anda!</h2>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <a href="#home">Home</a>
+
+        <a href="#motor">Motor</a>
+
+        <a href="#why-us">Kenapa Kami</a>
+
+        <a href="#booking">Booking</a>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <h2>
+            🛵 Jangan Biar Jam Rosakkan Percutian Anda!
+        </h2>
 
         <p>
             Terokai Cameron Highlands dengan lebih mudah,
@@ -116,67 +60,309 @@
 
     </section>
 
-    <section class="section">
 
-        <h2>🍓 Kenapa Pilih Oppa Strawberry?</h2>
+    <!-- MOTOR -->
+    <section class="section" id="motor">
 
-        <div class="features">
+        <h2>🛵 Pilihan Motor</h2>
 
-            <div class="feature">
-                🛵<br>
-                <strong>Motor Terjaga</strong>
-                <p>Motor diperiksa sebelum diserahkan kepada pelanggan.</p>
+        <div class="motor-grid">
+
+
+            <!-- AVANTIZ -->
+            <div class="motor-card">
+
+                <div class="motor-image">
+                    🛵
+                </div>
+
+                <h3>Yamaha Avantiz</h3>
+
+                <p>
+                    Pilihan santai dan praktikal
+                    untuk menerokai Cameron Highlands.
+                </p>
+
+                <div class="price">
+
+                    <span>12 Jam</span>
+                    <strong>RM50</strong>
+
+                </div>
+
+                <div class="price">
+
+                    <span>24 Jam</span>
+                    <strong>RM70</strong>
+
+                </div>
+
+                <div class="price">
+
+                    <span>36 Jam</span>
+                    <strong>RM100</strong>
+
+                </div>
+
+                <div class="price">
+
+                    <span>48 Jam</span>
+                    <strong>RM140</strong>
+
+                </div>
+
+                <a class="button"
+                   href="#booking">
+
+                    🛵 Tempah Avantiz
+
+                </a>
+
             </div>
 
-            <div class="feature">
-                🌧️<br>
-                <strong>Raincoat Disediakan</strong>
-                <p>Sedia menghadapi cuaca Cameron yang tidak menentu.</p>
+
+            <!-- VARIO -->
+            <div class="motor-card">
+
+                <div class="motor-image">
+                    🛵
+                </div>
+
+                <h3>Honda Vario 160</h3>
+
+                <p>
+                    Keyless, selesa dan bertenaga
+                    untuk perjalanan di Cameron Highlands.
+                </p>
+
+                <div class="price">
+
+                    <span>12 Jam</span>
+                    <strong>RM70</strong>
+
+                </div>
+
+                <div class="price">
+
+                    <span>24 Jam</span>
+                    <strong>RM110</strong>
+
+                </div>
+
+                <div class="price">
+
+                    <span>36 Jam</span>
+                    <strong>RM170</strong>
+
+                </div>
+
+                <div class="price">
+
+                    <span>48 Jam</span>
+                    <strong>RM220</strong>
+
+                </div>
+
+                <a class="button"
+                   href="#booking">
+
+                    🛵 Tempah Vario
+
+                </a>
+
             </div>
 
-            <div class="feature">
-                🪖<br>
-                <strong>Helmet Disediakan</strong>
-                <p>Helmet dewasa dan kanak-kanak tersedia.</p>
+
+            <!-- EGO GEAR -->
+            <div class="motor-card">
+
+                <div class="motor-image">
+                    🛵
+                </div>
+
+                <h3>Yamaha Ego Gear</h3>
+
+                <p>
+                    Praktikal dan mudah digunakan
+                    untuk perjalanan sekitar Cameron Highlands.
+                </p>
+
+                <p class="coming-soon">
+                    Harga akan dikemaskini
+                </p>
+
+                <a class="button"
+                   href="#booking">
+
+                    🛵 Tanya Harga
+
+                </a>
+
             </div>
 
-            <div class="feature">
-                📲<br>
-                <strong>Booking Mudah</strong>
-                <p>Tempah dengan mudah melalui WhatsApp.</p>
+
+            <!-- NMAX -->
+            <div class="motor-card">
+
+                <div class="motor-image">
+                    🛵
+                </div>
+
+                <h3>Yamaha NMAX 155</h3>
+
+                <p>
+                    Pilihan lebih premium untuk
+                    perjalanan yang selesa.
+                </p>
+
+                <p class="coming-soon">
+                    Harga akan dikemaskini
+                </p>
+
+                <a class="button"
+                   href="#booking">
+
+                    🛵 Tanya Harga
+
+                </a>
+
             </div>
 
         </div>
 
     </section>
 
-    <section class="section" id="booking">
 
-        <h2>🛵 Ready To Ride?</h2>
+    <!-- WHY US -->
+    <section class="section" id="why-us">
 
-        <p>
-            Tempah motor anda sekarang dan nikmati
-            perjalanan lebih bebas di Cameron Highlands.
-        </p>
+        <h2>🍓 Kenapa Pilih Oppa Strawberry?</h2>
 
-        <a class="button" href="https://wa.me/60195769906">
-            📲 WhatsApp Kami
-        </a>
+        <div class="features">
+
+
+            <div class="feature">
+
+                🛵
+
+                <strong>Motor Terjaga</strong>
+
+                <p>
+                    Motor diperiksa sebelum diserahkan
+                    kepada pelanggan.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                🌧️
+
+                <strong>Raincoat Disediakan</strong>
+
+                <p>
+                    Sedia menghadapi cuaca Cameron
+                    yang tidak menentu.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                🪖
+
+                <strong>Helmet Disediakan</strong>
+
+                <p>
+                    Helmet dewasa dan kanak-kanak
+                    tersedia.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                📲
+
+                <strong>Booking Mudah</strong>
+
+                <p>
+                    Tempah dengan mudah melalui
+                    WhatsApp.
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
-    <footer>
 
-        🍓 Oppa Strawberry Motor Sewa<br>
-        Cameron Highlands, Pahang
+    <!-- BOOKING -->
+    <section class="section booking-section"
+             id="booking">
+
+        <h2>📲 Tempah Motor Sekarang</h2>
 
         <p>
-            📲 019-576 9906 | 013-360 7013
+            Nak bergerak lebih bebas di Cameron Highlands?
         </p>
 
-        © 2026 Oppa Strawberry Motor Sewa
+        <p>
+            Hubungi kami melalui WhatsApp untuk
+            semak ketersediaan motor.
+        </p>
+
+        <a class="button"
+           href="https://wa.me/60195769906">
+
+            📲 WhatsApp 019-576 9906
+
+        </a>
+
+        <a class="button secondary-button"
+           href="https://wa.me/60133607013">
+
+            📲 WhatsApp 013-360 7013
+
+        </a>
+
+        <p class="booking-note">
+
+            ⚠️ Tempahan hanya dianggap sah selepas
+            mendapat pengesahan daripada pihak
+            Oppa Strawberry.
+
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>🍓 Oppa Strawberry Motor Sewa</h3>
+
+        <p>
+            Cameron Highlands, Pahang 🇲🇾
+        </p>
+
+        <p>
+            📲 019-576 9906
+            <br>
+            📲 013-360 7013
+        </p>
+
+        <p>
+            © 2026 Oppa Strawberry Motor Sewa
+        </p>
 
     </footer>
 
+
 </body>
+
 </html>

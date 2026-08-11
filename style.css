@@ -1,7 +1,6 @@
-/* =========================
-   OPPA STRAWBERRY
-   MOTOR SEWA CAMERON HIGHLANDS
-   ========================= */
+/* ==============================
+   OPPA STRAWBERRY MOTOR SEWA
+   ============================== */
 
 * {
     box-sizing: border-box;
@@ -19,56 +18,119 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+/* ==============================
+   HEADER
+   ============================== */
 
 header {
     background: #111111;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 22px 15px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 32px;
 }
 
 header p {
-    margin: 5px 0 0;
-    font-size: 15px;
+    margin: 4px 0 0;
+    font-size: 16px;
 }
 
-/* HERO */
+/* ==============================
+   NAVIGATION
+   ============================== */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    background: white;
+    padding: 10px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.navbar a {
+    color: #222222;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+}
+
+.navbar a:hover {
+    background: #fff0f2;
+    color: #e63946;
+}
+
+/* ==============================
+   HERO
+   ============================== */
 
 .hero {
     text-align: center;
+
     padding: 70px 20px;
-    background: #fff5f6;
+
+    background:
+        linear-gradient(
+            rgba(255,245,246,0.95),
+            rgba(255,245,246,0.95)
+        );
 }
 
 .hero h2 {
-    font-size: 42px;
+    font-size: 44px;
     line-height: 1.15;
+
+    max-width: 850px;
+
     margin: 0 auto 20px;
-    max-width: 800px;
 }
 
 .hero p {
-    font-size: 19px;
     max-width: 700px;
+
     margin: 10px auto;
+
+    font-size: 18px;
 }
+
+/* ==============================
+   BUTTON
+   ============================== */
 
 .button {
     display: inline-block;
-    margin-top: 25px;
-    padding: 16px 28px;
+
+    margin-top: 22px;
+
+    padding: 14px 24px;
+
     background: #e63946;
     color: white;
+
     text-decoration: none;
+
     border-radius: 10px;
+
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
+
     transition: 0.2s;
 }
 
@@ -77,80 +139,286 @@ header p {
     opacity: 0.9;
 }
 
-/* SECTION */
+/* ==============================
+   SECTION
+   ============================== */
 
 .section {
-    padding: 60px 20px;
-    text-align: center;
     max-width: 1100px;
+
     margin: auto;
+
+    padding: 65px 20px;
+
+    text-align: center;
 }
 
 .section h2 {
     font-size: 32px;
-    margin-bottom: 35px;
+
+    margin: 0 0 35px;
 }
 
-/* FEATURES */
+/* ==============================
+   MOTOR GRID
+   ============================== */
+
+.motor-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+/* ==============================
+   MOTOR CARD
+   ============================== */
+
+.motor-card {
+    background: white;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.07);
+
+    transition: 0.2s;
+}
+
+.motor-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,0.10);
+}
+
+.motor-image {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 150px;
+
+    background: #f8f8f8;
+
+    border-radius: 14px;
+
+    font-size: 75px;
+
+    margin-bottom: 20px;
+}
+
+.motor-card h3 {
+    font-size: 24px;
+
+    margin: 10px 0;
+}
+
+.motor-card p {
+    color: #555555;
+
+    margin-bottom: 20px;
+}
+
+/* ==============================
+   PRICE
+   ============================== */
+
+.price {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 12px;
+
+    margin: 7px 0;
+
+    background: #fff5f6;
+
+    border-radius: 8px;
+}
+
+.price span {
+    font-size: 15px;
+}
+
+.price strong {
+    color: #e63946;
+
+    font-size: 18px;
+}
+
+/* ==============================
+   COMING SOON
+   ============================== */
+
+.coming-soon {
+    background: #f5f5f5;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    color: #555555 !important;
+}
+
+/* ==============================
+   FEATURES
+   ============================== */
 
 .features {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
     gap: 20px;
+
     max-width: 850px;
+
     margin: auto;
 }
 
 .feature {
-    padding: 30px 20px;
+    padding: 28px 20px;
+
     border: 1px solid #eeeeee;
+
     border-radius: 16px;
+
     background: white;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,0.06);
 }
 
 .feature strong {
     display: block;
-    font-size: 21px;
+
+    font-size: 20px;
+
     margin: 10px 0;
 }
 
 .feature p {
     margin: 0;
+
     color: #555555;
 }
 
-/* BOOKING */
+/* ==============================
+   BOOKING
+   ============================== */
 
-#booking {
-    background: #f8f8f8;
+.booking-section {
     max-width: none;
+
+    background: #f8f8f8;
 }
 
-#booking p {
-    font-size: 18px;
+.booking-section p {
+    font-size: 17px;
 }
 
-/* FOOTER */
+.secondary-button {
+    background: #222222;
+
+    margin-left: 8px;
+}
+
+.booking-note {
+    max-width: 600px;
+
+    margin: 25px auto 0;
+
+    padding: 15px;
+
+    background: #fff4d6;
+
+    border-radius: 10px;
+
+    font-size: 14px !important;
+
+    color: #555555;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
 
 footer {
     background: #111111;
+
     color: white;
+
     text-align: center;
-    padding: 30px 20px;
+
+    padding: 35px 20px;
+}
+
+footer h3 {
+    margin-top: 0;
 }
 
 footer p {
-    margin: 10px 0 0;
+    margin: 8px 0;
 }
 
-/* MOBILE */
+/* ==============================
+   MOBILE
+   ============================== */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+
+    header {
+        padding: 18px 12px;
+    }
 
     header h1 {
-        font-size: 23px;
+        font-size: 25px;
     }
+
+    header p {
+        font-size: 14px;
+    }
+
+    /* NAVIGATION */
+
+    .navbar {
+        overflow-x: auto;
+
+        justify-content: flex-start;
+
+        white-space: nowrap;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navbar a {
+        flex-shrink: 0;
+
+        font-size: 13px;
+
+        padding: 8px 11px;
+    }
+
+    /* HERO */
 
     .hero {
         padding: 55px 18px;
@@ -164,6 +432,8 @@ footer p {
         font-size: 17px;
     }
 
+    /* SECTIONS */
+
     .section {
         padding: 50px 15px;
     }
@@ -172,16 +442,47 @@ footer p {
         font-size: 28px;
     }
 
-    .features {
+    /* MOTOR */
+
+    .motor-grid {
         grid-template-columns: 1fr;
+
+        gap: 20px;
     }
 
-    .feature {
-        padding: 25px 18px;
+    .motor-card {
+        padding: 20px;
     }
+
+    .motor-image {
+        height: 170px;
+    }
+
+    /* FEATURES */
+
+    .features {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    /* BUTTON */
 
     .button {
         width: 100%;
+
         max-width: 360px;
+    }
+
+    .secondary-button {
+        margin-left: 0;
+
+        margin-top: 10px;
+    }
+
+    /* PRICE */
+
+    .price {
+        padding: 11px 13px;
     }
 }
